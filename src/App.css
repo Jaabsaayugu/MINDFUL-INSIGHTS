@@ -1,32 +1,101 @@
 #root {
-  max-width: 1280px;
+  max-width: 90%;
+  min-width: 300px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
+  font-family: "inherit", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: #eee;
+  font-size: 2rem;
+  min-width: 100dvh;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem, 3vw + 1rem, 4rem);
+  color: brown;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: cursive, sans-serif;
+  color: rgb(221, 83, 83);
+}
+
+p {
+  font-weight: 900;
+  font-family: "inherit" sans-serif;
+}
+
+.advice-container {
+  width: clamp(300px, 50vw, 800px);
+  max-width: 900px;
+  margin: auto;
+  border: 0.5px solid rgb(247, 158, 158);
+  background-color: antiquewhite;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 0.2rem rgba(1, 0, 0, 0.1);
+}
+
+.advice-feedback {
+  border-radius: 2rem;
+  outline: none;
+  border: 0.2px solid rgb(224, 214, 214);
+}
+
+.advice-icon {
+  width: 7rem;
+  height: 5rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  box-shadow: 2rem 2rem 0.2rem rgba(235, 135, 4, 0.1);
+}
+
+.content {
+  padding: 3rem;
+  margin: 2rem;
+  font-family: cursive;
+  border: 0.1px solid rgb(223, 130, 130);
+  outline: none;
+  border-top: 1rem solid rgb(192, 81, 7);
+  border-radius: 2rem;
+}
+
+span {
+  font-weight: 900;
+  color: rgb(175, 31, 31);
 }
 
 .button {
+  color: rgb(175, 31, 31);
   height: 6em;
   padding: 1.5em;
+  margin: 1rem auto;
   will-change: filter;
   transition: filter 300ms;
+  width: clamp(200px, 30vw, 400px);
+  border: none;
+  border-radius: 2rem;
+  background-color: rgb(247, 149, 85);
 }
 
 .button:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  filter: drop-shadow(0 0 2em #b9590aaa);
 }
